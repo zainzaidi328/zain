@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" 
+crossorigin="anonymous">
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
+integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" 
+crossorigin="anonymous"></script>
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Deep Learning AI | Short Courses</title>
+    <style>
+       .navbar-brand img {
+      max-height: 50px; 
+    }
+    .shadow-border {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Customize the values as needed */
+    margin-bottom: -20px;
+    
+  }
+    </style>
+    
+</head>
+<body>
+    
+  <nav class="responsive navbar navbar-expand-lg bg-body-tertiary ">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+    
+        <img src="https://i.ibb.co/F8wt2hm/image-removebg-preview-3.png" alt="logo" width="180" height="34">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end " id="navbarNavDropdown">
+       
+        <ul class="navbar-nav mx-4">
+
+          <li class="nav-item dropdown ">
+            <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Courses
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Short Courses</a></li>
+              <li><a class="dropdown-item" href="#">Specializations</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              AI NewsLetter
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">The Batch</a></li>
+              <li><a class="dropdown-item" href="#">Andrew's Letter</a></li>
+              <li><a class="dropdown-item" href="#">Data Points</a></li>
+              <li><a class="dropdown-item" href="#">ML Reasearch</a></li>
+              <li><a class="dropdown-item" href="#">Blog</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Community
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Forum</a></li>
+              <li><a class="dropdown-item" href="#">Events</a></li>
+              <li><a class="dropdown-item" href="#">Ambassador</a></li>
+              <li><a class="dropdown-item" href="#">Ambassador Spotlight</a></li>
+
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">Resources</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Company
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">About</a></li>
+              <li><a class="dropdown-item" href="#">Careers</a></li>
+              <li><a class="dropdown-item" href="#">Contact</a></li>
+
+            </ul>
+          </li>
+          <li>
+           
+            <button type="button" class="btn btn-danger">Start Learning</button>
+          </li>
+
+
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+ 
+  <nav class="navbar bg-body-tertiary fixed-top d-xxl-none d-xl-none d-lg-none p-4">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="https://i.ibb.co/F8wt2hm/image-removebg-preview-3.png" alt="logo" width="180" height="34"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="https://i.ibb.co/F8wt2hm/image-removebg-preview-3.png" alt="logo" width="180" height="34"></h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Courses
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Short Courses</a></li>
+                <li><a class="dropdown-item" href="#">Specializations</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                AI NewsLetter
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">The Batch</a></li>
+                <li><a class="dropdown-item" href="#">Andrew's Letter</a></li>
+                <li><a class="dropdown-item" href="#">Data Points</a></li>
+                <li><a class="dropdown-item" href="#">ML Reasearch</a></li>
+                <li><a class="dropdown-item" href="#">Blog</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Community
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Forum</a></li>
+                <li><a class="dropdown-item" href="#">Events</a></li>
+                <li><a class="dropdown-item" href="#">Ambassador</a></li>
+                <li><a class="dropdown-item" href="#">Ambassador Spotlight</a></li>
+
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">Resources</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Company
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">About</a></li>
+                <li><a class="dropdown-item" href="#">Careers</a></li>
+                <li><a class="dropdown-item" href="#">Contact</a></li>
+
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+<div class="container-fluid bg-primary " style="padding: 5rem 1;">
+  <div class="row m-4 text-white">
+    <div class="col text-center align-self-center">
+      <h5>LEARN GENERATIVE AI</h5>
+      <h1>Short Courses</h1>
+      <h5>Take your generative AI skills to the next level with<br>
+        short courses from DeepLearning.AI. Our short<br>
+        courses help you learn new skills, tools, and<br>
+        concepts efficiently. Available for free for a limited time. </h5>
+    </div>
+    <div class="col text-right">
+      <img src="https://i.ibb.co/c3Z1psM/image.png" alt="Deep Learning logo" class="d-inline-block align-text-top">
+    </div>
+  </div>
+</div>
+
+   <h3> Just Added</h3>
+  </div>
+    <style>
+  .left-grey {
+    background-color: #4d5053; 
+  }
+</style>
+</head>
+<body>
+  <div class="container rounded p-4 shadow-border mb-4">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="video-thumbnail rounded overflow-hidden position-relative">
+          <a href="https://www.youtube.com/watch?v=jMKRUo4wVKA" target="_blank">
+            <img src="thumb1.jpg" alt="Video Thumbnail" class="img-fluid">
+            <span class="play-button"></span>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="text-center">
+          <h1>Knowledge Graph for RAG</h1>
+          <p>Learn how to build and use knowledge graph systems to improve your retrieval augmented generation applications.</p>
+          <ul>
+            <li>Use Neo4j’s query language Cypher to manage and retrieve data stored in knowledge graphs.</li>
+            <li>Write knowledge graph queries that find and format text data to provide more relevant context to LLMs for Retrieval Augmented Generation.</li>
+            <li>Build a question-answering system using Neo4j and LangChain to chat with a knowledge graph of structured text documents.</li>
+          </ul>
+          <div class="text-center mt-4">
+            <button class="btn btn-primary mr-3 d-none d-md-inline-block">Enroll for free</button>
+            <button class="btn btn-secondary d-none d-md-inline-block">Learn more</button>
+            <button class="btn btn-primary btn-block mb-3 d-md-none">Enroll for free</button>
+            <button class="btn btn-secondary btn-block d-md-none">Learn more</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<h4>New courses</h4>
+
+
+<div class="container rounded p-4 shadow-border mb-4">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="video-thumbnail rounded overflow-hidden position-relative">
+        <a href="https://www.youtube.com/watch?v=jMKRUo4wVKA" target="_blank">
+         
+          <img src="thumb2.jpg" alt="Video Thumbnail" class="img-fluid">
+        
+          <span class="play-button"></span>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="text-center">
+        <h1>ChatGPT Prompt Engineering for Developers</h1>
+        <p>Go beyond the chat box. Use API access to leverage LLMs into your own applications, and learn to build a custom chatbot.</p>
+        <ul>
+          <li>Learn prompt engineering best practices for application development.</li>
+          <li>Discover new ways to use LLMs, including how to build your own chatbot.</li>
+          <li>Gain hands-on practice writing and iterating on prompts using the OpenAI API.</li>
+        </ul>
+        <div class="text-center mt-4">
+          <button class="btn btn-primary mr-3 d-none d-md-inline-block">Enroll for free</button>
+            <button class="btn btn-secondary d-none d-md-inline-block">Learn more</button>
+            <button class="btn btn-primary btn-block mb-3 d-md-none">Enroll for free</button>
+            <button class="btn btn-secondary btn-block d-md-none">Learn more</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container rounded p-4 shadow-border mb-4">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="video-thumbnail rounded overflow-hidden position-relative">
+        <a href="https://www.youtube.com/watch?v=BunESRhYhec" target="_blank">
+       
+          <img src="thumb3.jpg" alt="Video Thumbnail" class="img-fluid">
+   
+          <span class="play-button"></span>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="text-center">
+        <h1>Building Systems with the ChatGPT API</h1>
+        <p>Level up your use of LLMs. Learn to break down complex tasks, automate workflows, chain LLM calls, and get better outputs.</p>
+        <ul>
+          <li>Efficiently build multi-step systems using large language models..</li>
+          <li>Learn to split complex tasks into a pipeline of subtasks using multistage prompts.</li>
+          <li>Evaluate your LLM inputs and outputs for safety, accuracy, and relevance..</li>
+        </ul>
+        <div class="text-center mt-4">
+          <button class="btn btn-primary mr-3 d-none d-md-inline-block">Enroll for free</button>
+            <button class="btn btn-secondary d-none d-md-inline-block">Learn more</button>
+            <button class="btn btn-primary btn-block mb-3 d-md-none">Enroll for free</button>
+            <button class="btn btn-secondary btn-block d-md-none">Learn more</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container rounded p-4 shadow-border mb-4">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="video-thumbnail rounded overflow-hidden position-relative">
+        <a href="https://www.youtube.com/watch?v=jMKRUo4wVKA" target="_blank">
+        
+          <img src="thumb4.jpg" alt="Video Thumbnail" class="img-fluid">
+        
+          <span class="play-button"></span>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="text-center">
+        <h1>LangChain for LLM Application Development</h1>
+        <p>The framework to take LLMs out of the box. Learn to use LangChain to call LLMs into new environments, and use memories, chains, and agents to take on new and complex tasks.</p>
+        <ul>
+          <li>Learn LangChain directly from the creator of the framework, Harrison Chase.</li>
+          <li>Apply LLMs to proprietary data to build personal assistants and specialized chatbots.</li>
+          <li>Use agents, chained calls, and memories to expand your use of LLMS.</li>
+        </ul>
+        <div class="text-center mt-4">
+          <button class="btn btn-primary mr-3 d-none d-md-inline-block">Enroll for free</button>
+          <button class="btn btn-secondary d-none d-md-inline-block">Learn more</button>
+          <button class="btn btn-primary btn-block mb-3 d-md-none">Enroll for free</button>
+          <button class="btn btn-secondary btn-block d-md-none">Learn more</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container rounded p-4 shadow-border mb-4 ">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="video-thumbnail rounded overflow-hidden position-relative">
+        <a href="https://www.youtube.com/watch?v=fo7bD-NgA4Y" target="_blank">
+         
+          <img src="thumb5.jpg" alt="Video Thumbnail" class="img-fluid">
+
+          <span class="play-button"></span>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="text-center">
+        <h1>LangChain: Chat with Your Data</h1>
+        <p>Create a chatbot to interface with your private data and documents using LangChain..</p>
+        <ul>
+          <li>Learn from LangChain creator, Harrison Chase.</li>
+          <li>Utilize 80+ loaders for diverse data sources in LangChain.</li>
+          <li>Create a chatbot to interact with your own documents and data.</li>
+        </ul>
+        <div class="text-center mt-4">
+          <button class="btn btn-primary mr-3 d-none d-md-inline-block">Enroll for free</button>
+            <button class="btn btn-secondary d-none d-md-inline-block">Learn more</button>
+            <button class="btn btn-primary btn-block mb-3 d-md-none">Enroll for free</button>
+            <button class="btn btn-secondary btn-block d-md-none">Learn more</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container rounded p-4 shadow-border mb-4">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="video-thumbnail rounded overflow-hidden position-relative">
+        <a href="https://www.youtube.com/watch?v=9PxhCekQYNI" target="_blank">
+         
+          <img src="thumb6.jpg" alt="Video Thumbnail" class="img-fluid">
+
+          <span class="play-button"></span>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="text-center">
+        <h1>Finetuning Large Language Models</h1>
+        <p>Learn to finetune an LLM in minutes and specialize it to use your own data.</p>
+        <ul>
+          <li>Master LLM finetuning basics.</li>
+          <li>Differentiate finetuning from prompt engineering and know when to use each.</li>
+          <li>Gain hands-on experience with real datasets for your projects.</li>
+        </ul>
+        <div class="text-center mt-4">
+          <button class="btn btn-primary mr-3 d-none d-md-inline-block">Enroll for free</button>
+          <button class="btn btn-secondary d-none d-md-inline-block">Learn more</button>
+          <button class="btn btn-primary btn-block mb-3 d-md-none">Enroll for free</button>
+          <button class="btn btn-secondary btn-block d-md-none">Learn more</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container rounded p-4 shadow-border mb-4">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="video-thumbnail rounded overflow-hidden position-relative">
+        <a href="https://www.youtube.com/watch?v=Sh4n0uk-NHk" target="_blank">
+          
+          <img src="thumb7.jpg" alt="Video Thumbnail" class="img-fluid">
+        
+          <span class="play-button"></span>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="text-center">
+        <h1>Large Language Models with Semantic Search</h1>
+        <p>Learn to use LLMs to enhance search and summarize results..</p>
+        <ul>
+          <li>Enhance keyword search using Cohere Rerank.</li>
+          <li>Use embeddings to leverage dense retrieval, a powerful NLP tool.</li>
+          <li>Evaluate your effectiveness for further optimization.</li>
+        </ul>
+        <div class="text-center mt-4">
+          <button class="btn btn-primary mr-3 d-none d-md-inline-block">Enroll for free</button>
+          <button class="btn btn-secondary d-none d-md-inline-block">Learn more</button>
+          <button class="btn btn-primary btn-block mb-3 d-md-none">Enroll for free</button>
+          <button class="btn btn-secondary btn-block d-md-none">Learn more</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container rounded p-4 shadow-border mb-4">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="video-thumbnail rounded overflow-hidden position-relative">
+        <a href="https://www.youtube.com/watch?v=4fkqXdcTmGk" target="_blank">
+          <img src="thumb8.jpg" alt="Video Thumbnail" class="img-fluid">
+          <span class="play-button"></span>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="text-center">
+        <h1>Building Generative AI Applications with Gradio</h1>
+        <p>Create and demo machine learning applications quickly. Share your app with the world on Hugging Face Spaces.</p>
+        <ul>
+          <li>Rapidly develop ML apps.</li>
+          <li>Create image generation, captioning, and text summarization apps.</li>
+          <li>Share your apps with teammates and beta testers on Hugging Face Spaces.</li>
+        </ul>
+        <div class="text-center mt-4">
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container">
+  <div class="row">  
+    <div class="col-md-12 text-center">
+      <p class="font-italic" style="font-size: 25px;">
+        "Generative AI offers many new opportunities for AI engineers to build, in minutes or hours, powerful applications that previously would have to taken days or weeks. I'm excited about sharing these best practices to enable many more people to take advantage of these revolutionary new capabilitiees."
+        - Andrew Ng
+      </p>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="container-fluid bg-dark text-white text-center p-3">
+    <img src="dlgrey.png" alt="Deep Learning AI" class="img-fluid" style="max-width: 250px;">
+    <div class="d-md-flex justify-content-center">
+      <p class="col text-center">Short courses</p>
+      <p class="col text-center">Specialization</p>
+      <p class="col text-center">The Batch</p>
+      <p class="col text-center">Community</p>
+      <p class="col text-center">Careers</p>
+      <p class="col text-center">About</p>
+    </div>
+    <div class="d-md-flex justify-content-center ">
+      <i class=" fa  fa-facebook-official" style="font-size:24px"></i>
+      <i class="fa fa-instagram" style="font-size:24px"></i>
+      <i class="fa fa-twitter" style="font-size:24px"></i>
+      <i class="fa fa-linkedin" style="font-size:24px"></i>
+    </div>
+
+  </div>
+</footer>
+
+<style>
+  .social-icon {
+    width: 35px; 
+    height: 100;
+    margin-right: 10px; 
+  }
+  
+</style>
+</body>
+</html>
+
